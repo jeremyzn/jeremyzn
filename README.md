@@ -1,47 +1,52 @@
-<h1 align="center">Bonjour 👋 ! Je m'appelle Jérémy</h1>
+# Bonjour, je suis Jeremy ! 👋
 
-###
+Je suis un développeur logiciel passionné avec un amour pour les projets open-source et la collaboration communautaire. Bienvenue sur mon profil GitHub !
 
-<br clear="both">
+## 🚀 À propos de moi
 
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=jeremyzn&hide_title=false&hide_rank=false&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=dark&locale=fr&hide_border=false" height="150" alt="stats graph"  />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=jeremyzn&locale=fr&hide_title=false&layout=compact&card_width=320&langs_count=5&theme=dark&hide_border=false" height="150" alt="languages graph"  />
-</div>
+- 🔭 Je travaille actuellement sur divers projets open-source
+- 🌱 J'apprends actuellement des sujets avancés en IA et en apprentissage automatique
+- 👯 Je cherche à collaborer sur des projets open-source liés au développement web et à l'IA
+- 💬 Demandez-moi à propos du développement logiciel, de l'IA et des contributions open-source
+- 📫 Comment me contacter : jeremyzn@example.com
+- 😄 Pronoms : Il/Lui
+- ⚡ Fait amusant : J'aime faire de la randonnée et de la photographie pendant mon temps libre
 
-###
+## 🛠️ Langages et outils
 
-<div align="center">
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" height="30" alt="javascript logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" height="30" alt="html5 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain.svg" height="30" alt="css3 logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain.svg" height="30" alt="python logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" height="30" alt="mongodb logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" height="30" alt="mysql logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" height="30" alt="php logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/debian/debian-plain.svg" height="30" alt="debian logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg" height="30" alt="linux logo"  />
-  <img width="12" />
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" height="30" alt="nodejs logo"  />
-</div>
+- **Langages de programmation :**
+  - JavaScript
+  - Python
+  - Java
+  - C++
 
-###
+- **Développement Web :**
+  - HTML5
+  - CSS3
+  - React
+  - Node.js
 
-<div align="center">
-  <a href="https://discord.com/users/461604848924753921" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=Discord&logo=discord&label=&color=7289DA&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="discord logo"  />
-  </a>
-  <a href="https://www.linkedin.com/in/jzn-dev/" target="_blank">
-    <img src="https://img.shields.io/static/v1?message=LinkedIn&logo=linkedin&label=&color=0077B5&logoColor=white&labelColor=&style=for-the-badge" height="35" alt="linkedin logo"  />
-  </a>
-</div>
+- **IA/ML :**
+  - TensorFlow
+  - PyTorch
+  - Scikit-Learn
 
-<br clear="both">
+- **Bases de données :**
+  - MySQL
+  - MongoDB
+
+- **Contrôle de version :**
+  - Git
+  - GitHub
+
+## 📈 Statistiques GitHub
+
+![Statistiques GitHub de Jeremy](https://github-readme-stats.vercel.app/api?username=jeremyzn&show_icons=true&theme=radical)
+
+## 📫 Contactez-moi
+
+- **Email :** jeremyzn@example.com
+- **LinkedIn :** [LinkedIn de Jeremy](https://www.linkedin.com/in/jeremyzn/)
+- **Twitter :** [@jeremyzn](https://twitter.com/jeremyzn)
+
+N'hésitez pas à explorer mes dépôts et à me contacter si vous souhaitez collaborer ou si vous avez des questions. Construisons quelque chose d'incroyable ensemble !
