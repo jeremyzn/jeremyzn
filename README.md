@@ -12,9 +12,6 @@ Développeur Full-Stack<br/>
 <a href="https://zenoxhq.fr">
   <img src="https://img.shields.io/badge/Portfolio-111111?style=for-the-badge"/>
 </a>
-<a href="https://www.linkedin.com/in/jeremyzn/">
-  <img src="https://img.shields.io/badge/LinkedIn-111111?style=for-the-badge&logo=linkedin&logoColor=white"/>
-</a>
 <a href="mailto:jeremy.zn@proton.me">
   <img src="https://img.shields.io/badge/Contact-111111?style=for-the-badge&logo=gmail&logoColor=white"/>
 </a>
