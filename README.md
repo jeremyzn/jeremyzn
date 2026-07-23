@@ -1,187 +1,148 @@
 <p align="center">
   <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=230&color=0%3A020617%2C45%3A0F172A%2C100%3A10B981&text=JEREMY&fontAlign=50&fontAlignY=38&fontColor=FFFFFF&fontSize=68&desc=Developpeur+web+%7C+React+%2F+Next.js+%2F+Node.js&descAlign=50&descAlignY=58&descSize=18&animation=fadeIn"
-    alt="Jeremy"
-  />
-</p>
-
-<p align="center">
-  <a href="https://zenoxhq.fr">
-    <img src="https://img.shields.io/badge/Portfolio-zenoxhq.fr-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Portfolio" />
-  </a>
-  <a href="https://github.com/jeremyznn?tab=repositories">
-    <img src="https://img.shields.io/badge/Repositories-GitHub-111827?style=for-the-badge&logo=github&logoColor=white" alt="GitHub repositories" />
-  </a>
-  <img src="https://komarev.com/ghpvc/?username=jeremyznn&style=for-the-badge&color=10B981&label=VISITES" alt="Vues du profil" />
-</p>
-
-<p align="center">
-  <img
-    src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=700&size=24&duration=2600&pause=900&color=10B981&center=true&vCenter=true&width=900&lines=Developpeur+web+orient%C3%A9+front-end;React+%2F+Next.js+%2F+Tailwind+CSS;Interfaces+modernes+et+responsive;Dashboards%2C+APIs+et+outils+web"
-    alt="Présentation animée"
+    src="https://cloud.zenoxhq.fr/f/lgsk/banner-zenoxhq.png"
+    alt="ZenoX HQ"
+    width="100%"
   />
 </p>
 
 <br />
+
+<h1 align="center">ZenoX</h1>
+
+<p align="center">
+  <strong>Développeur web full-stack</strong>
+</p>
+
+<p align="center">
+  React&nbsp;&nbsp;•&nbsp;&nbsp;Next.js&nbsp;&nbsp;•&nbsp;&nbsp;TypeScript&nbsp;&nbsp;•&nbsp;&nbsp;Node.js
+</p>
+
+<p align="center">
+  Je conçois des applications web modernes, performantes et structurées,<br />
+  avec une attention particulière portée au design, à l’expérience utilisateur et à la qualité du code.
+</p>
+
+<br />
+
+<p align="center">
+  <a href="https://github.com/jeremyznn">
+    <img
+      src="https://img.shields.io/badge/GitHub-ZenoX-000000?style=for-the-badge&logo=github&logoColor=white"
+      alt="Profil GitHub de ZenoX"
+    />
+  </a>
+  <a href="https://github.com/jeremyznn?tab=repositories">
+    <img
+      src="https://img.shields.io/badge/Repositories-Découvrir-111111?style=for-the-badge&logo=github&logoColor=white"
+      alt="Dépôts GitHub"
+    />
+  </a>
+  <img
+    src="https://komarev.com/ghpvc/?username=jeremyznn&style=for-the-badge&color=000000&label=VISITES"
+    alt="Nombre de visites du profil"
+  />
+</p>
+
+<br />
+
+---
 
 ## À propos
 
-Je m’appelle **Jérémy**, développeur web principalement orienté **React** et **Next.js**.
+Je suis **ZenoX**, développeur web full-stack spécialisé dans la création d’applications modernes avec **React**, **Next.js** et **TypeScript**.
 
-Je conçois des interfaces modernes, propres et responsive, avec une attention particulière portée à la structure, à la lisibilité du code et à l’expérience utilisateur.
+Je développe des interfaces propres, fluides et adaptées à tous les écrans, ainsi que des fonctionnalités complètes reliant le front-end, les API, la logique serveur et les bases de données.
 
-J’utilise surtout **React**, **Next.js** et **Tailwind CSS** pour créer des interfaces fluides, claires et faciles à maintenir. Je travaille aussi côté back-end avec **Node.js**, **MongoDB** et **MySQL** afin de connecter les interfaces à des fonctionnalités concrètes : APIs, gestion de données, dashboards et outils web.
+Mon objectif est de construire des projets :
 
-Mon objectif est simple : créer des projets utiles, bien organisés, agréables à utiliser et solides techniquement.
-
-<br />
-
-```js
-const jeremy = {
-  role: "Développeur web",
-  website: "https://zenoxhq.fr",
-  mainStack: ["React", "Next.js", "Tailwind CSS"],
-  backend: ["Node.js", "MongoDB", "MySQL"],
-  tools: ["Git", "GitHub", "Vercel"],
-  focus: [
-    "interfaces modernes",
-    "applications web",
-    "dashboards",
-    "APIs",
-    "outils web",
-  ],
-};
-```
+* Modernes et agréables à utiliser.
+* Rapides et performants.
+* Structurés et faciles à maintenir.
+* Fiables et solides techniquement.
 
 <br />
 
 ## Stack technique
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,nextjs,nodejs,mongodb,mysql,html,css,tailwind,git,github,vercel&theme=dark" alt="Stack technique" />
+  <img
+    src="https://skillicons.dev/icons?i=js,ts,react,nextjs,nodejs,tailwind,mongodb,mysql,git,github,docker,vscode&theme=dark&perline=6"
+    alt="Stack technique de ZenoX"
+  />
 </p>
+
+<br />
+
+## Ce que je développe
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h3>Interfaces modernes</h3>
+      <p>
+        Je crée des expériences visuelles propres, cohérentes et adaptées aux ordinateurs, aux tablettes et aux mobiles.
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Applications full-stack</h3>
+      <p>
+        Je développe des fonctionnalités complètes reliant l’interface, les API, la logique serveur et les bases de données.
+      </p>
+    </td>
+    <td width="33%" valign="top">
+      <h3>Tableaux de bord et outils</h3>
+      <p>
+        Je conçois des espaces de gestion clairs pour afficher, organiser et exploiter des données.
+      </p>
+    </td>
+  </tr>
+</table>
+
+<br />
+
+## Technologies principales
 
 <p align="center">
-  <img src="https://img.shields.io/badge/JavaScript-111827?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="JavaScript" />
-  <img src="https://img.shields.io/badge/React-111827?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
-  <img src="https://img.shields.io/badge/Next.js-020617?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
-  <img src="https://img.shields.io/badge/Tailwind%20CSS-0F172A?style=for-the-badge&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS" />
-  <img src="https://img.shields.io/badge/Node.js-0F172A?style=for-the-badge&logo=nodedotjs&logoColor=5FA04E" alt="Node.js" />
-  <img src="https://img.shields.io/badge/MongoDB-052E16?style=for-the-badge&logo=mongodb&logoColor=4EA94B" alt="MongoDB" />
-  <img src="https://img.shields.io/badge/MySQL-111827?style=for-the-badge&logo=mysql&logoColor=4479A1" alt="MySQL" />
-  <img src="https://img.shields.io/badge/Git-111827?style=for-the-badge&logo=git&logoColor=F05032" alt="Git" />
+  <img src="https://img.shields.io/badge/JavaScript-000000?style=for-the-badge&logo=javascript&logoColor=white" alt="JavaScript" />
+  <img src="https://img.shields.io/badge/TypeScript-111111?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/React-000000?style=for-the-badge&logo=react&logoColor=white" alt="React" />
+  <img src="https://img.shields.io/badge/Next.js-111111?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="Next.js" />
+  <img src="https://img.shields.io/badge/Tailwind_CSS-000000?style=for-the-badge&logo=tailwindcss&logoColor=white" alt="Tailwind CSS" />
+  <img src="https://img.shields.io/badge/Node.js-111111?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="Node.js" />
+  <img src="https://img.shields.io/badge/MongoDB-000000?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+  <img src="https://img.shields.io/badge/MySQL-111111?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Git-000000?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
+  <img src="https://img.shields.io/badge/Docker-111111?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
 </p>
-
-<br />
-
-## Domaines de travail
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>Applications React / Next.js</h3>
-      <p>
-        Développement d’interfaces modernes, responsive et structurées avec React, Next.js et Tailwind CSS.
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Interfaces front-end</h3>
-      <p>
-        Création de pages propres, fluides et agréables à utiliser, avec une attention portée aux détails visuels et à l’expérience utilisateur.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%">
-      <h3>Dashboards</h3>
-      <p>
-        Conception d’espaces de gestion clairs pour afficher, organiser et manipuler des données simplement.
-      </p>
-    </td>
-    <td width="50%">
-      <h3>APIs & données</h3>
-      <p>
-        Mise en place de routes API, logique serveur, connexions aux bases de données et intégrations utiles.
-      </p>
-    </td>
-  </tr>
-</table>
-
-<br />
-
-## Projets
-
-<table>
-  <tr>
-    <td width="50%">
-      <h3>Portfolio</h3>
-      <p>
-        Mon site personnel, pensé pour présenter mon profil, mes projets et mon évolution dans le développement web.
-      </p>
-      <a href="https://zenoxhq.fr">
-        <img src="https://img.shields.io/badge/Ouvrir%20le%20portfolio-10B981?style=for-the-badge&logo=vercel&logoColor=white" alt="Ouvrir le portfolio" />
-      </a>
-    </td>
-    <td width="50%">
-      <h3>GitHub</h3>
-      <p>
-        Mes projets, expérimentations et travaux autour du front-end, du back-end et des outils web.
-      </p>
-      <a href="https://github.com/jeremyznn?tab=repositories">
-        <img src="https://img.shields.io/badge/Voir%20les%20repos-111827?style=for-the-badge&logo=github&logoColor=white" alt="Voir les repos GitHub" />
-      </a>
-    </td>
-  </tr>
-</table>
 
 <br />
 
 ## En ce moment
 
-<table>
-  <tr>
-    <td width="50%">
-      <h3>Front-end moderne</h3>
-      <p>
-        Je travaille sur des interfaces plus propres, mieux structurées et plus cohérentes, avec React, Next.js et Tailwind CSS.
-      </p>
-    </td>
-    <td width="50%">
-      <h3>Projets full-stack</h3>
-      <p>
-        Je développe des fonctionnalités côté serveur avec Node.js, des APIs et des connexions à des bases de données.
-      </p>
-    </td>
-  </tr>
-</table>
+* J’approfondis mes connaissances en **Next.js**, **React** et **TypeScript**.
+* Je crée des composants plus propres et plus réutilisables.
+* J’améliore les performances et l’accessibilité de mes projets.
+* Je développe des fonctionnalités full-stack.
+* Je renforce mes méthodes de travail avec **Git**, **Docker** et l’intégration continue.
 
 <br />
 
-## Activité GitHub
+---
 
 <p align="center">
-  <img
-    src="https://streak-stats.demolab.com?user=jeremyznn&theme=transparent&hide_border=true&ring=10B981&fire=10B981&currStreakLabel=10B981&sideLabels=CBD5E1&currStreakNum=FFFFFF&sideNums=FFFFFF&dates=94A3B8"
-    alt="Streak GitHub"
-  />
+  <a href="https://github.com/jeremyzn?tab=repositories">
+    <img
+      src="https://img.shields.io/badge/Explorer_mes_projets-000000?style=for-the-badge&logo=github&logoColor=white"
+      alt="Explorer les projets de ZenoX"
+    />
+  </a>
 </p>
 
 <p align="center">
-  <img
-    src="https://github-readme-activity-graph.vercel.app/graph?username=jeremyznn&bg_color=020617&color=CBD5E1&title_color=10B981&line=10B981&point=FFFFFF&area=true&hide_border=true&radius=12&custom_title=Activite%20recente"
-    alt="Graphique d'activité GitHub"
-  />
-</p>
-
-<br />
-
-<p align="center">
-  <strong>React, Next.js et des interfaces web propres, modernes et utiles.</strong>
+  <strong>Interfaces modernes • Code structuré • Projets utiles</strong>
 </p>
 
 <p align="center">
-  <img
-    src="https://capsule-render.vercel.app/api?type=waving&height=120&section=footer&color=0%3A10B981%2C45%3A0F172A%2C100%3A020617"
-    alt="Footer"
-  />
+  <sub>Conçu et développé par ZenoX.</sub>
 </p>
