@@ -1,316 +1,203 @@
-<p align="center">
-  <img
-    src="https://cloud.zenoxhq.fr/f/lgsk/banner-zenoxhq.png"
-    alt="Bannière ZenoX HQ"
-    width="100%"
-  />
-</p>
-
-<br />
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/hero.dark.gif">
+  <source media="(prefers-color-scheme: light)" srcset="./assets/hero.light.gif">
+  <img src="./assets/hero.dark.gif" width="100%" alt="ZenoX — Full-stack, Cloud, Mobile and AI developer">
+</picture>
 
 <div align="center">
 
-# ZenoX
+# Jérémy · ZenoX
 
-### Développeur web full-stack
+**Full‑Stack Engineering · Cloud & DevOps · Mobile · AI integrations**
 
-**React · Next.js · TypeScript · Node.js · Infrastructure web**
-
-Je conçois des applications web modernes, performantes et structurées, avec une attention particulière portée à l’expérience utilisateur, à la qualité du code et à la fiabilité technique.
+Je conçois et déploie des produits numériques complets : interfaces modernes, back‑ends, applications mobiles, automatisations, intégrations API et infrastructure de production.
 
 <br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-jeremyzn-050505?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/jeremyzn)
-[![Projets](https://img.shields.io/badge/Projets-Découvrir-111111?style=for-the-badge\&logo=github\&logoColor=white)](https://github.com/jeremyzn?tab=repositories)
-[![Discord](https://img.shields.io/badge/Discord-Me_contacter-050505?style=for-the-badge\&logo=discord\&logoColor=white)](https://discord.com/users/461604848924753921)
-![Visites](https://komarev.com/ghpvc/?username=jeremyzn\&style=for-the-badge\&color=111111\&label=VISITES)
+[![GitHub](https://img.shields.io/badge/GitHub-jeremyznn-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeremyznn)
+[![Repositories](https://img.shields.io/badge/Projects-Explore-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeremyznn?tab=repositories)
+[![Discord](https://img.shields.io/badge/Discord-Contact-111318?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/461604848924753921)
 
 </div>
 
 <br />
 
----
-
-## À propos
-
-Je suis **ZenoX**, développeur web full-stack spécialisé dans la création d’applications modernes avec **React**, **Next.js**, **TypeScript** et **Node.js**.
-
-Je développe des interfaces fluides et responsives, des API, des systèmes d’authentification, des outils de gestion et des fonctionnalités complètes connectées à des bases de données.
-
-Je m’intéresse également au déploiement, à la conteneurisation, à l’administration de serveurs Linux et à l’automatisation des environnements de développement.
-
-Mon objectif est de construire des projets :
-
-* Modernes et agréables à utiliser.
-* Rapides et performants.
-* Structurés et faciles à maintenir.
-* Fiables et solides techniquement.
-* Pensés pour évoluer dans le temps.
-
-<br />
+## 01 · What I build
 
 <table>
-  <tr>
-    <td width="25%" align="center" valign="top">
-      <h3>Expérience</h3>
-      <p>
-        Des interfaces claires, cohérentes et adaptées à tous les écrans.
-      </p>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <h3>Performance</h3>
-      <p>
-        Des applications rapides, optimisées et réactives.
-      </p>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <h3>Architecture</h3>
-      <p>
-        Un code structuré, réutilisable et facile à faire évoluer.
-      </p>
-    </td>
-    <td width="25%" align="center" valign="top">
-      <h3>Fiabilité</h3>
-      <p>
-        Des solutions robustes et pensées pour la production.
-      </p>
-    </td>
-  </tr>
+<tr>
+<td width="50%" valign="top">
+
+### Product engineering
+
+Applications web full‑stack, dashboards, SaaS, espaces utilisateurs et interfaces complexes avec une attention particulière portée à l’UX, aux performances et à la maintenabilité.
+
+`React` `Next.js` `TypeScript` `Tailwind CSS` `Radix UI`
+
+</td>
+<td width="50%" valign="top">
+
+### Backend & integrations
+
+API REST, authentification, logique métier, paiements, webhooks, services tiers et flux connectés à des bases de données relationnelles ou documentaires.
+
+`Node.js` `Prisma` `MySQL` `MariaDB` `MongoDB` `Stripe`
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### Cloud & DevOps
+
+Conteneurisation, orchestration, CI/CD, reverse proxy, déploiement, administration Linux et exploitation d’applications en production.
+
+`Docker` `Kubernetes` `K3s` `AWS · EC2/S3/RDS/Lambda` `Cloudflare` `GitHub Actions`
+
+</td>
+<td width="50%" valign="top">
+
+### Mobile & AI
+
+Applications Flutter, notifications et services Firebase, intégration de modèles IA/LLM et automatisation de fonctionnalités produit.
+
+`Flutter` `Firebase` `LLM APIs` `Automation` `Apple / Google Wallet`
+
+</td>
+</tr>
 </table>
 
 <br />
 
-## Stack technique
-
-### Front-end et interfaces
-
-<p align="center">
-  <img
-    src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind&theme=dark"
-    alt="Technologies front-end"
-  />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Radix_UI-050505?style=for-the-badge&logo=radixui&logoColor=white" alt="Radix UI" />
-  <img src="https://img.shields.io/badge/Base_UI-111111?style=for-the-badge&logo=mui&logoColor=white" alt="Base UI" />
-  <img src="https://img.shields.io/badge/Responsive_Design-050505?style=for-the-badge&logo=css3&logoColor=white" alt="Responsive Design" />
-  <img src="https://img.shields.io/badge/Accessibilité-111111?style=for-the-badge&logo=w3c&logoColor=white" alt="Accessibilité web" />
-</p>
-
-<br />
-
-### Back-end et bases de données
-
-<p align="center">
-  <img
-    src="https://skillicons.dev/icons?i=nodejs,prisma,mysql,mongodb&theme=dark"
-    alt="Technologies back-end et bases de données"
-  />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/MariaDB-050505?style=for-the-badge&logo=mariadb&logoColor=white" alt="MariaDB" />
-  <img src="https://img.shields.io/badge/API_REST-111111?style=for-the-badge&logo=fastapi&logoColor=white" alt="API REST" />
-  <img src="https://img.shields.io/badge/OAuth_2.0-050505?style=for-the-badge&logo=auth0&logoColor=white" alt="OAuth 2.0" />
-  <img src="https://img.shields.io/badge/Webhooks-111111?style=for-the-badge&logo=webhook&logoColor=white" alt="Webhooks" />
-</p>
-
-<br />
-
-### Infrastructure et déploiement
-
-<p align="center">
-  <img
-    src="https://skillicons.dev/icons?i=docker,kubernetes,debian,linux,cloudflare,vercel,githubactions&theme=dark"
-    alt="Infrastructure et déploiement"
-  />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/K3s-050505?style=for-the-badge&logo=k3s&logoColor=white" alt="K3s" />
-  <img src="https://img.shields.io/badge/Apache-111111?style=for-the-badge&logo=apache&logoColor=white" alt="Apache" />
-  <img src="https://img.shields.io/badge/Traefik-050505?style=for-the-badge&logo=traefikproxy&logoColor=white" alt="Traefik" />
-  <img src="https://img.shields.io/badge/CI%2FCD-111111?style=for-the-badge&logo=githubactions&logoColor=white" alt="CI/CD" />
-  <img src="https://img.shields.io/badge/VPS_Linux-050505?style=for-the-badge&logo=linux&logoColor=white" alt="VPS Linux" />
-</p>
-
-<br />
-
-### Outils de développement
-
-<p align="center">
-  <img
-    src="https://skillicons.dev/icons?i=git,github,npm,bash,vscode,postman&theme=dark"
-    alt="Outils de développement"
-  />
-</p>
-
-<p align="center">
-  <img src="https://img.shields.io/badge/GitHub_Actions-050505?style=for-the-badge&logo=githubactions&logoColor=white" alt="GitHub Actions" />
-  <img src="https://img.shields.io/badge/Prisma_ORM-111111?style=for-the-badge&logo=prisma&logoColor=white" alt="Prisma ORM" />
-  <img src="https://img.shields.io/badge/Docker_Compose-050505?style=for-the-badge&logo=docker&logoColor=white" alt="Docker Compose" />
-  <img src="https://img.shields.io/badge/SSH-111111?style=for-the-badge&logo=gnubash&logoColor=white" alt="SSH" />
-</p>
-
-<br />
-
-### Services et intégrations
-
-<p align="center">
-  <img src="https://img.shields.io/badge/Cloudflare-050505?style=for-the-badge&logo=cloudflare&logoColor=white" alt="Cloudflare" />
-  <img src="https://img.shields.io/badge/Vercel-111111?style=for-the-badge&logo=vercel&logoColor=white" alt="Vercel" />
-  <img src="https://img.shields.io/badge/Discord.js-050505?style=for-the-badge&logo=discord&logoColor=white" alt="Discord.js" />
-  <img src="https://img.shields.io/badge/Stripe-111111?style=for-the-badge&logo=stripe&logoColor=white" alt="Stripe" />
-  <img src="https://img.shields.io/badge/Apple_Wallet-050505?style=for-the-badge&logo=apple&logoColor=white" alt="Apple Wallet" />
-</p>
-
-<br />
-
-## Technologies principales
+## 02 · Stack 2026
 
 <div align="center">
 
-![JavaScript](https://img.shields.io/badge/JavaScript-050505?style=for-the-badge\&logo=javascript\&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-111111?style=for-the-badge\&logo=typescript\&logoColor=white)
-![React](https://img.shields.io/badge/React-050505?style=for-the-badge\&logo=react\&logoColor=white)
-![Next.js](https://img.shields.io/badge/Next.js-111111?style=for-the-badge\&logo=nextdotjs\&logoColor=white)
-![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-050505?style=for-the-badge\&logo=tailwindcss\&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-111111?style=for-the-badge\&logo=nodedotjs\&logoColor=white)
-![Prisma](https://img.shields.io/badge/Prisma-050505?style=for-the-badge\&logo=prisma\&logoColor=white)
-![MySQL](https://img.shields.io/badge/MySQL-111111?style=for-the-badge\&logo=mysql\&logoColor=white)
-![MariaDB](https://img.shields.io/badge/MariaDB-050505?style=for-the-badge\&logo=mariadb\&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-111111?style=for-the-badge\&logo=mongodb\&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-050505?style=for-the-badge\&logo=docker\&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-111111?style=for-the-badge\&logo=kubernetes\&logoColor=white)
-![Cloudflare](https://img.shields.io/badge/Cloudflare-050505?style=for-the-badge\&logo=cloudflare\&logoColor=white)
-![Git](https://img.shields.io/badge/Git-111111?style=for-the-badge\&logo=git\&logoColor=white)
+### Frontend
+<img src="https://skillicons.dev/icons?i=html,css,js,ts,react,nextjs,tailwind&theme=dark" alt="Frontend stack" />
+
+### Backend & data
+<img src="https://skillicons.dev/icons?i=nodejs,prisma,mysql,mongodb&theme=dark" alt="Backend and data stack" />
+
+### Mobile · Cloud · Infrastructure
+<img src="https://skillicons.dev/icons?i=flutter,firebase,aws,docker,kubernetes,linux,cloudflare,vercel,githubactions&theme=dark" alt="Mobile cloud and infrastructure stack" />
+
+### Integrations & tooling
+
+`Stripe` · `OAuth 2.0` · `Webhooks` · `Firebase` · `Discord.js` · `Apple Wallet` · `Google Wallet` · `Amazon APIs` · `WooCommerce`
+
+<br />
+
+<img src="https://skillicons.dev/icons?i=git,github,npm,bash,vscode,postman&theme=dark" alt="Development tooling" />
 
 </div>
 
 <br />
 
-## Ce que je développe
+## 03 · GitHub live
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/overview.dark.svg">
+  <img src="./assets/cards/overview.light.svg" width="100%" alt="GitHub overview">
+</picture>
+
+<br />
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/contributions.dark.svg">
+  <img src="./assets/cards/contributions.light.svg" width="100%" alt="GitHub contributions and streaks">
+</picture>
+
+<br />
 
 <table>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Applications web full-stack</h3>
-      <p>
-        Je développe des applications complètes réunissant des interfaces modernes, des API, une logique métier structurée et des bases de données.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Tableaux de bord</h3>
-      <p>
-        Je conçois des espaces de gestion clairs permettant de visualiser, organiser et exploiter efficacement les données.
-      </p>
-    </td>
-  </tr>
-  <tr>
-    <td width="50%" valign="top">
-      <h3>Plateformes numériques</h3>
-      <p>
-        Je crée des plateformes comprenant des espaces utilisateurs, des systèmes d’authentification et des fonctionnalités avancées.
-      </p>
-    </td>
-    <td width="50%" valign="top">
-      <h3>Outils professionnels</h3>
-      <p>
-        Je développe des solutions permettant d’automatiser des tâches et de simplifier les processus quotidiens.
-      </p>
-    </td>
-  </tr>
+<tr>
+<td width="50%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/rhythm.dark.svg">
+  <img src="./assets/cards/rhythm.light.svg" width="100%" alt="Coding rhythm">
+</picture>
+
+</td>
+<td width="50%">
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/cards/languages.dark.svg">
+  <img src="./assets/cards/languages.light.svg" width="100%" alt="Languages">
+</picture>
+
+</td>
+</tr>
 </table>
 
-<br />
-
-## Compétences principales
-
-<table>
-  <tr>
-    <td width="33%" valign="top">
-      <h3>Front-end</h3>
-      <p>
-        Interfaces responsives<br />
-        Composants réutilisables<br />
-        Design systems<br />
-        Accessibilité web<br />
-        Optimisation des performances
-      </p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>Back-end</h3>
-      <p>
-        API REST<br />
-        Authentification<br />
-        Gestion des données<br />
-        Logique métier<br />
-        Intégrations externes
-      </p>
-    </td>
-    <td width="33%" valign="top">
-      <h3>Infrastructure</h3>
-      <p>
-        Conteneurisation Docker<br />
-        Déploiements Kubernetes<br />
-        Administration de VPS<br />
-        Intégration continue<br />
-        Sécurité et supervision
-      </p>
-    </td>
-  </tr>
-</table>
-
-<br />
-
-## Ma façon de travailler
-
-```text
-Comprendre le besoin
-        ↓
-Définir une expérience claire
-        ↓
-Concevoir une architecture solide
-        ↓
-Développer des composants maintenables
-        ↓
-Tester et optimiser l’application
-        ↓
-Déployer une solution fiable
-```
-
-<br />
-
-## En ce moment
-
-* Je développe des applications avec **Next.js**, **React** et **TypeScript**.
-* Je crée des composants propres, cohérents et réutilisables.
-* Je conçois des fonctionnalités full-stack avec **Prisma**, **MySQL** et **MariaDB**.
-* Je développe des API, des systèmes d’authentification et des intégrations externes.
-* Je déploie des applications avec **Docker**, **Kubernetes** et **K3s**.
-* J’administre des environnements Linux et des services hébergés sur VPS.
-* J’améliore les performances, l’accessibilité et la sécurité de mes projets.
-* Je mets en place des workflows d’intégration et de déploiement continus.
-
-<br />
-
----
-
-<div align="center">
-
-### Concevoir des expériences modernes, performantes et durables.
-
-<br />
-
-[![Découvrir mes projets](https://img.shields.io/badge/Découvrir_mes_projets-FFFFFF?style=for-the-badge\&logo=github\&logoColor=000000)](https://github.com/jeremyzn?tab=repositories)
+<sub>Cartes générées depuis l’API GitHub et commitées automatiquement par GitHub Actions.</sub>
 
 <br /><br />
 
-**Interfaces soignées · Architecture solide · Expériences performantes**
+## 04 · Contribution world · 3D
+
+<p align="center">
+  <img src="./profile-3d-contrib/profile-night-rainbow.svg" width="100%" alt="3D GitHub contribution calendar">
+</p>
+
+<sub>Calendrier de contributions 3D régénéré automatiquement chaque jour.</sub>
+
+<br /><br />
+
+## 05 · Activity stream
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contribution-snake-dark.svg">
+  <img src="./assets/contribution-snake.svg" width="100%" alt="Contribution animation">
+</picture>
 
 <br />
 
-<sub>Conçu et développé par ZenoX.</sub>
+## 06 · Engineering focus
+
+```text
+DISCOVER ──► DESIGN ──► BUILD ──► AUTOMATE ──► SHIP ──► OBSERVE ──► ITERATE
+   │            │          │           │          │          │           │
+ product        UX      full-stack    CI/CD     cloud     monitoring    scale
+```
+
+<table>
+<tr>
+<td width="33%" valign="top">
+
+**Experience**
+
+Interfaces cohérentes, responsive design, composants réutilisables, accessibilité et attention aux détails.
+
+</td>
+<td width="33%" valign="top">
+
+**Architecture**
+
+Applications structurées, logique métier claire, API, données et intégrations pensées pour évoluer.
+
+</td>
+<td width="33%" valign="top">
+
+**Production**
+
+Conteneurs, orchestration, automatisation, observabilité, sécurité et environnements Linux.
+
+</td>
+</tr>
+</table>
+
+<br />
+
+---
+
+<div align="center">
+
+### Build clean. Ship reliably. Keep evolving.
+
+**Web · Mobile · Cloud · DevOps · AI**
+
+<sub>Dynamic profile rebuilt by GitHub Actions.</sub>
 
 </div>
