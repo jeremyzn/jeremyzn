@@ -1,0 +1,77 @@
+name: Profile // Live Build
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "17 2 * * *"
+  push:
+    branches:
+      - main
+    paths:
+      - "README.md"
+      - "scripts/**"
+      - ".github/workflows/profile-live.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-live
+  cancel-in-progress: true
+
+jobs:
+  build-profile:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Generate ZenoX animated hero
+        shell: bash
+        run: |
+          python3 -m pip install --disable-pip-version-check pillow
+          python3 scripts/generate_hero.py
+
+      - name: Generate GitHub profile cards
+        uses: seijikohara/profile-cards-action@v1
+        with:
+          github-token: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          username: ${{ github.repository_owner }}
+          cards: overview,contributions,rhythm,languages
+          output-dir: assets/cards
+          themes: light,dark
+          language-limit: 8
+          commit: false
+
+      - name: Generate 3D contribution world
+        uses: yoshi389111/github-profile-3d-contrib@latest
+        env:
+          GITHUB_TOKEN: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          USERNAME: ${{ github.repository_owner }}
+
+      - name: Generate contribution animation
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          github_token: ${{ secrets.PROFILE_TOKEN || secrets.GITHUB_TOKEN }}
+          outputs: |
+            assets/contribution-snake.svg?color_snake=#6d5dfc&color_dots=#f6f8fa,#d7d2ff,#a89cff,#7767ff,#4f46e5
+            assets/contribution-snake-dark.svg?palette=github-dark&color_snake=#b7a7ff&color_dots=#0d1117,#24213e,#4338ca,#6d5dfc,#22d3ee
+
+      - name: Commit generated profile
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets profile-3d-contrib
+
+          if git diff --cached --quiet; then
+            echo "Profile assets are already up to date."
+            exit 0
+          fi
+
+          git commit -m "chore(profile): rebuild live profile [skip ci]"
+          git push
