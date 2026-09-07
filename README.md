@@ -14,7 +14,7 @@ Je conçois et déploie des produits numériques complets : interfaces modernes,
 
 <br />
 
-[![GitHub](https://img.shields.io/badge/GitHub-jeremyznn-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeremyznn)
+[![GitHub](https://img.shields.io/badge/GitHub-jeremyzn-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeremyzn)
 [![Repositories](https://img.shields.io/badge/Projects-Explore-111318?style=for-the-badge&logo=github&logoColor=white)](https://github.com/jeremyznn?tab=repositories)
 [![Discord](https://img.shields.io/badge/Discord-Contact-111318?style=for-the-badge&logo=discord&logoColor=white)](https://discord.com/users/461604848924753921)
 
