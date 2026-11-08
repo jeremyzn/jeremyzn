@@ -14,6 +14,8 @@ from datetime import date, datetime, timezone
 from pathlib import Path
 from xml.sax.saxutils import escape
 
+from brand_icons import BRANDS
+
 USER = os.environ.get("PROFILE_USER", "jeremyzn")
 OUT = Path(__file__).resolve().parent.parent / "assets"
 
@@ -86,18 +88,45 @@ def eyebrow(x, y, label, t) -> str:
     return text(x, y - 4, label.upper(), 13, t["accent"], family=MONO, weight=600, spacing=2.4)
 
 
-def chip_width(label: str, size: int = 15, pad: int = 16) -> float:
-    return len(label) * size * MONO_RATIO + pad * 2
+ICONS = {
+    "arrow": '<path d="M7 17 17 7M8.5 7H17v8.5"/>',
+    "mail": '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/>',
+    "cloud": '<path d="M7 18h10a4 4 0 0 0 .6-7.96A6 6 0 0 0 6.2 9.1 4.5 4.5 0 0 0 7 18Z"/>',
+    "key": '<circle cx="8" cy="15" r="4"/><path d="m11 12 9-9M17 6l3 3M14 9l2 2"/>',
+    "link": '<path d="M10 14a4 4 0 0 0 5.66 0l3-3a4 4 0 0 0-5.66-5.66l-1 1"/><path d="M14 10a4 4 0 0 0-5.66 0l-3 3a4 4 0 0 0 5.66 5.66l1-1"/>',
+    "sparkle": '<path d="M12 3c.5 4.5 2.5 6.5 7 7-4.5.5-6.5 2.5-7 7-.5-4.5-2.5-6.5-7-7 4.5-.5 6.5-2.5 7-7Z"/><path d="M19 15c.2 1.6 1 2.4 2.5 2.5-1.5.2-2.3 1-2.5 2.5-.2-1.5-1-2.3-2.5-2.5 1.5-.1 2.3-.9 2.5-2.5Z"/>',
+}
 
 
-def chip(x, y, label, t, size=15, pad=16, h=38) -> str:
-    w = chip_width(label, size, pad)
-    return (
-        f'<rect x="{x}" y="{y}" width="{w:.1f}" height="{h}" rx="{h / 2}" '
-        f'fill="{t["surface"]}" stroke="{t["line"]}"/>'
-        + text(f"{x + w / 2:.1f}", y + h / 2 + size * 0.35, label, size, t["text"],
-               family=MONO, anchor="middle")
-    )
+def icon(name: str, x: float, y: float, size: float, color: str, width: float = 1.9) -> str:
+    """Logo de marque plein si disponible, sinon icône au trait."""
+    k = size / 24
+    move = f'transform="translate({x:.1f} {y:.1f}) scale({k:.4f})"'
+    if name in BRANDS:
+        rule = ' fill-rule="evenodd"' if name == "linkedin" else ""
+        return f'<path {move} d="{BRANDS[name]}" fill="{color}"{rule}/>'
+    return (f'<g {move} fill="none" stroke="{color}" stroke-width="{width / k:.2f}" '
+            f'stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</g>')
+
+
+CHIP_ICON, CHIP_GAP = 16, 9
+
+
+def chip_width(label: str, size: int = 15, pad: int = 16, logo: str | None = None) -> float:
+    extra = CHIP_ICON + CHIP_GAP if logo else 0
+    return len(label) * size * MONO_RATIO + pad * 2 + extra
+
+
+def chip(x, y, label, t, size=15, pad=16, h=38, logo: str | None = None) -> str:
+    w = chip_width(label, size, pad, logo)
+    parts = [f'<rect x="{x}" y="{y}" width="{w:.1f}" height="{h}" rx="{h / 2}" '
+             f'fill="{t["surface"]}" stroke="{t["line"]}"/>']
+    tx = x + pad
+    if logo:
+        parts.append(icon(logo, tx, y + (h - CHIP_ICON) / 2, CHIP_ICON, t["text"], 1.8))
+        tx += CHIP_ICON + CHIP_GAP
+    parts.append(text(f"{tx:.1f}", y + h / 2 + size * 0.35, label, size, t["text"], family=MONO))
+    return "".join(parts)
 
 
 # Hero
@@ -221,12 +250,18 @@ def services(t) -> str:
 # Stack
 
 STACK = [
-    ("Front", ["TypeScript", "React", "Next.js", "Tailwind CSS", "Radix UI"]),
-    ("Back", ["Node.js", "Prisma", "PostgreSQL", "MySQL", "MongoDB"]),
-    ("Cloud", ["Docker", "Kubernetes", "AWS", "Cloudflare", "Vercel", "Linux"]),
-    ("Mobile", ["Flutter", "Firebase", "Apple Wallet", "Google Wallet"]),
-    ("Services", ["Stripe", "OAuth", "Webhooks", "LLM APIs", "Discord.js"]),
-    ("Outils", ["Git", "GitHub Actions", "Bash", "Postman"]),
+    ("Front", [("TypeScript", "typescript"), ("React", "react"), ("Next.js", "nextdotjs"),
+               ("Tailwind CSS", "tailwindcss"), ("Radix UI", "radixui")]),
+    ("Back", [("Node.js", "nodedotjs"), ("Prisma", "prisma"), ("PostgreSQL", "postgresql"),
+              ("MySQL", "mysql"), ("MongoDB", "mongodb")]),
+    ("Cloud", [("Docker", "docker"), ("Kubernetes", "kubernetes"), ("AWS", "cloud"),
+               ("Cloudflare", "cloudflare"), ("Vercel", "vercel"), ("Linux", "linux")]),
+    ("Mobile", [("Flutter", "flutter"), ("Firebase", "firebase"), ("Apple Wallet", "apple"),
+                ("Google Wallet", "google")]),
+    ("Services", [("Stripe", "stripe"), ("OAuth", "key"), ("Webhooks", "link"),
+                  ("LLM APIs", "sparkle"), ("Discord.js", "discord")]),
+    ("Outils", [("Git", "git"), ("GitHub Actions", "githubactions"), ("Bash", "gnubash"),
+                ("Postman", "postman")]),
 ]
 
 
@@ -239,10 +274,10 @@ def stack(t) -> str:
         y = top + r * row
         parts.append(text(4, y + 25, group, 17, t["muted"], weight=500))
         x = 150
-        for item in items:
-            parts.append(chip(x, y, item, t))
-            x += chip_width(item) + 10
-    label = "Stack. " + " ".join(f"{g}: {', '.join(i)}." for g, i in STACK)
+        for item, logo in items:
+            parts.append(chip(x, y, item, t, logo=logo))
+            x += chip_width(item, logo=logo) + 10
+    label = "Stack. " + " ".join(f"{g}: {', '.join(i for i, _ in items)}." for g, items in STACK)
     return svg(w, h, label, "".join(parts))
 
 
@@ -409,20 +444,12 @@ def activity(t, data: dict | None) -> str:
 EMAIL = "contact@zenoxhq.fr"
 INK = "#140A05"  # texte posé sur la couleur d'accent
 
-ICONS = {
-    "arrow": '<path d="M7 17 17 7M8.5 7H17v8.5"/>',
-    "mail": '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/>',
-    "linkedin": '<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13.5a2.5 2.5 0 0 1 5 0V16"/>',
-    "grid": '<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>',
-    "chat": '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>',
-}
-
 BUTTONS = [
     ("portfolio", "Portfolio", "arrow", True),
     ("contact", "Me contacter", "mail", False),
     ("linkedin", "LinkedIn", "linkedin", False),
-    ("projets", "Projets", "grid", False),
-    ("discord", "Discord", "chat", False),
+    ("projets", "Projets", "github", False),
+    ("discord", "Discord", "discord", False),
 ]
 
 NARROW, WIDE = set("fijlrtI.,' "), set("mwMW")
@@ -434,12 +461,6 @@ def sans_width(label: str, size: float) -> float:
     for c in label:
         em += 0.32 if c in NARROW else 0.86 if c in WIDE else 0.68 if c.isupper() else 0.57
     return em * size
-
-
-def icon(name: str, x: float, y: float, size: float, color: str, width: float = 1.9) -> str:
-    k = size / 24
-    return (f'<g transform="translate({x} {y}) scale({k})" fill="none" stroke="{color}" '
-            f'stroke-width="{width / k:.2f}" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</g>')
 
 
 def button(t, label: str, icon_name: str, primary: bool) -> str:
