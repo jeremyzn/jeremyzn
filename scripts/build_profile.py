@@ -404,8 +404,97 @@ def activity(t, data: dict | None) -> str:
     return svg(w, h, label, "".join(parts))
 
 
+# Boutons et contact
+
+EMAIL = "contact@zenoxhq.fr"
+INK = "#140A05"  # texte posé sur la couleur d'accent
+
+ICONS = {
+    "arrow": '<path d="M7 17 17 7M8.5 7H17v8.5"/>',
+    "mail": '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="m4 7 8 6 8-6"/>',
+    "linkedin": '<rect x="3" y="3" width="18" height="18" rx="4"/><path d="M8 11v5M8 8v.01M12 16v-5M12 13.5a2.5 2.5 0 0 1 5 0V16"/>',
+    "grid": '<rect x="4" y="4" width="7" height="7" rx="2"/><rect x="13" y="4" width="7" height="7" rx="2"/><rect x="4" y="13" width="7" height="7" rx="2"/><rect x="13" y="13" width="7" height="7" rx="2"/>',
+    "chat": '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>',
+}
+
+BUTTONS = [
+    ("portfolio", "Portfolio", "arrow", True),
+    ("contact", "Me contacter", "mail", False),
+    ("linkedin", "LinkedIn", "linkedin", False),
+    ("projets", "Projets", "grid", False),
+    ("discord", "Discord", "chat", False),
+]
+
+NARROW, WIDE = set("fijlrtI.,' "), set("mwMW")
+
+
+def sans_width(label: str, size: float) -> float:
+    """Largeur approximative d'un texte sans serif semi gras."""
+    em = 0.0
+    for c in label:
+        em += 0.32 if c in NARROW else 0.86 if c in WIDE else 0.68 if c.isupper() else 0.57
+    return em * size
+
+
+def icon(name: str, x: float, y: float, size: float, color: str, width: float = 1.9) -> str:
+    k = size / 24
+    return (f'<g transform="translate({x} {y}) scale({k})" fill="none" stroke="{color}" '
+            f'stroke-width="{width / k:.2f}" stroke-linecap="round" stroke-linejoin="round">{ICONS[name]}</g>')
+
+
+def button(t, label: str, icon_name: str, primary: bool) -> str:
+    h, size, ic, gap, pad = 48, 15, 18, 10, 18
+    tw = sans_width(label, size)
+    w = round(pad + ic + gap + tw + pad + 2)
+    fill = t["accent"] if primary else t["surface"]
+    stroke = t["accent"] if primary else t["line"]
+    fg = INK if primary else t["text"]
+    if primary:  # libellé puis flèche
+        tx, ix = pad, pad + tw + gap
+    else:  # icône puis libellé
+        ix, tx = pad, pad + ic + gap
+    body = (
+        f'<rect x="0.5" y="0.5" width="{w - 1}" height="{h - 1}" rx="{h / 2}" fill="{fill}" stroke="{stroke}"/>'
+        + icon(icon_name, ix, (h - ic) / 2, ic, fg)
+        + text(tx, h / 2 + size * 0.36, label, size, fg, weight=600,
+               extra=f'textLength="{tw:.1f}" lengthAdjust="spacing"')
+    )
+    return svg(w, h, label, body)
+
+
+def contact(t) -> str:
+    w, h = 1200, 330
+    style = """
+      .o1 { animation: drift1 24s ease-in-out infinite alternate; }
+      .o2 { animation: drift2 28s ease-in-out infinite alternate; }
+      @keyframes drift1 { to { transform: translate(-70px, 30px); } }
+      @keyframes drift2 { to { transform: translate(60px, -40px); } }
+      @media (prefers-reduced-motion: reduce) { .o1, .o2 { animation: none; } }
+    """
+    pill_w = 26 + 22 + 14 + len(EMAIL) * 18 * MONO_RATIO + 18 + 18 + 26
+    body = f"""
+      <defs>
+        <clipPath id="clip"><rect x="1" y="1" width="{w - 2}" height="{h - 2}" rx="27"/></clipPath>
+        <filter id="blur" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="70"/></filter>
+      </defs>
+      {frame(w, h, t)}
+      <g clip-path="url(#clip)"><g filter="url(#blur)" opacity="{t['orb']}">
+        <circle class="o1" cx="1010" cy="120" r="150" fill="{t['accent']}"/>
+        <circle class="o2" cx="1120" cy="280" r="120" fill="{t['accent2']}"/>
+      </g></g>
+      {eyebrow(64, 84, "Contact", t)}
+      {text(60, 158, "Un projet en tête ?", 64, t['text'], weight=700, spacing=-2.6)}
+      {text(64, 200, "Parlons de votre produit, de l'idée jusqu'à la mise en production.", 22, t['muted'])}
+      <rect x="64" y="236" width="{pill_w:.0f}" height="56" rx="28" fill="{t['accent']}"/>
+      {icon("mail", 64 + 26, 236 + 17, 22, INK)}
+      {text(64 + 26 + 22 + 14, 236 + 35, EMAIL, 18, INK, family=MONO, weight=600)}
+      {icon("arrow", 64 + pill_w - 26 - 18, 236 + 19, 18, INK)}
+    """
+    return svg(w, h, f"Un projet en tête ? Écrivez moi à {EMAIL}", body, style)
+
+
 def main() -> None:
-    OUT.mkdir(parents=True, exist_ok=True)
+    (OUT / "buttons").mkdir(parents=True, exist_ok=True)
     data = fetch()
     for name, theme in THEMES.items():
         files = {
@@ -413,7 +502,10 @@ def main() -> None:
             f"services.{name}.svg": services(theme),
             f"stack.{name}.svg": stack(theme),
             f"activity.{name}.svg": activity(theme, data),
+            f"contact.{name}.svg": contact(theme),
         }
+        for slug, label, icon_name, primary in BUTTONS:
+            files[f"buttons/{slug}.{name}.svg"] = button(theme, label, icon_name, primary)
         for filename, content in files.items():
             (OUT / filename).write_text(content, encoding="utf-8")
             print(f"ok  assets/{filename}")

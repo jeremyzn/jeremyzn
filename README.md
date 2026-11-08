@@ -8,7 +8,13 @@
 
 Je conçois et je livre des produits numériques de bout en bout. Interfaces web, back end, applications mobiles, automatisations et infrastructure de production, avec le même soin du premier écran jusqu'au serveur.
 
-**[Portfolio](https://zenoxhq.fr)**&nbsp;&nbsp;&nbsp;&nbsp;**[LinkedIn](https://www.linkedin.com/in/jeremyzn/)**&nbsp;&nbsp;&nbsp;&nbsp;**[Projets](https://github.com/jeremyzn?tab=repositories)**&nbsp;&nbsp;&nbsp;&nbsp;**[Discord](https://discord.com/users/461604848924753921)**
+<p>
+<a href="https://zenoxhq.fr"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/portfolio.dark.svg"><img src="./assets/buttons/portfolio.light.svg" height="44" alt="Portfolio"></picture></a>
+<a href="mailto:contact@zenoxhq.fr"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/contact.dark.svg"><img src="./assets/buttons/contact.light.svg" height="44" alt="Me contacter par mail"></picture></a>
+<a href="https://www.linkedin.com/in/jeremyzn/"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/linkedin.dark.svg"><img src="./assets/buttons/linkedin.light.svg" height="44" alt="LinkedIn"></picture></a>
+<a href="https://github.com/jeremyzn?tab=repositories"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/projets.dark.svg"><img src="./assets/buttons/projets.light.svg" height="44" alt="Projets"></picture></a>
+<a href="https://discord.com/users/461604848924753921"><picture><source media="(prefers-color-scheme: dark)" srcset="./assets/buttons/discord.dark.svg"><img src="./assets/buttons/discord.light.svg" height="44" alt="Discord"></picture></a>
+</p>
 
 <br />
 
@@ -32,3 +38,13 @@ Je conçois et je livre des produits numériques de bout en bout. Interfaces web
   <source media="(prefers-color-scheme: dark)" srcset="./assets/activity.dark.svg">
   <img src="./assets/activity.light.svg" width="100%" alt="Activité GitHub des douze derniers mois">
 </picture>
+
+<br />
+<br />
+
+<a href="mailto:contact@zenoxhq.fr">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="./assets/contact.dark.svg">
+  <img src="./assets/contact.light.svg" width="100%" alt="Un projet en tête ? Écrivez moi à contact@zenoxhq.fr">
+</picture>
+</a>
