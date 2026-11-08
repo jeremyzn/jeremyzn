@@ -8,7 +8,7 @@
 
 Je conçois et je livre des produits numériques de bout en bout. Interfaces web, back end, applications mobiles, automatisations et infrastructure de production, avec le même soin du premier écran jusqu'au serveur.
 
-**[Mes projets](https://github.com/jeremyzn?tab=repositories)**&nbsp;&nbsp;&nbsp;&nbsp;**[Me contacter sur Discord](https://discord.com/users/461604848924753921)**
+**[Portfolio](https://zenoxhq.fr)**&nbsp;&nbsp;&nbsp;&nbsp;**[LinkedIn](https://www.linkedin.com/in/jeremyzn/)**&nbsp;&nbsp;&nbsp;&nbsp;**[Projets](https://github.com/jeremyzn?tab=repositories)**&nbsp;&nbsp;&nbsp;&nbsp;**[Discord](https://discord.com/users/461604848924753921)**
 
 <br />
 
